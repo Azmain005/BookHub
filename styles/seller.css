@@ -1,0 +1,111 @@
+.seller {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sell {
+  display: flex;
+  height: auto;
+  width: 60%;
+  border: 2px solid black;
+  padding: 20px 30px;
+  flex-direction: column;
+  border-radius: 6px;
+  background-color: var(--clr-gray);
+  color: var(--clr-white);
+}
+
+.bline {
+  height: 1px;
+  width: 90%;
+  background-color: var(--clr-white);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sell h1 {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  width: 28%;
+  margin-right: 10px;
+  font-size: larger;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 60%;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--clr-white);
+}
+
+.file-input {
+  display: flex;
+  align-items: center;
+  width: 61%;
+}
+
+.file-input input[type="text"] {
+  width: calc(100% - 110px); /* Adjusted to accommodate padding/margin */
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--clr-white);
+  padding-right: 10px;
+}
+
+.choose-file {
+  display: inline-block;
+  width: 100px;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--clr-white);
+  border-radius: 5px;
+  color: black;
+  font-size: larger;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.choose-file:hover {
+  color: var(--clr-orange);
+  transform: translateY(2px);
+}
+
+.large-input {
+  min-height: 200px;
+  resize: vertical;
+  overflow-y: scroll;
+}
+
+.sellbtn {
+  margin-top: 10px;
+  height: 40px;
+  width: 130px;
+  background-color: var(--clr-white);
+  border-radius: 5px;
+  color: black;
+  font-size: larger;
+}
+
+.sellbtn:hover {
+  color: var(--clr-orange);
+  transform: translateY(2px);
+}

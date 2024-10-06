@@ -1,0 +1,158 @@
+/* Ensure the parent container or body has a defined height */
+
+/* Your existing CSS */
+.lulliall {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+  margin-bottom: 10px;
+}
+
+
+.bookcatvall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 80%;
+  background: var(--clr-gray);
+  color: var(--clr-white);
+  margin: 10px 15px;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+.catnameall {
+  display: flex;
+  width: 97%;
+  justify-content: space-between;
+  padding: 15px 15px;
+  height: 60px;
+  align-items: center;
+}
+
+.catnameall h2 {
+  font-size: 30px;
+}
+
+.bookbtnall {
+  width: 120px;
+  height: 40px;
+}
+
+.book-shelfall {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to a new row */
+  justify-content: space-between; /* Evenly distributes space between the books */
+  /* gap: 2px; */
+  width: 100%;
+  /* padding: 0 5px; */
+  /* border: 2px solid pink; */
+  padding-left: 20px;
+  /* padding-right: 20px; */
+  height: auto;
+}
+
+.bookall {
+  flex: 0 1 calc(20% - 20px); /* Makes each book take up 20% of the row, accounting for gap */
+  height: 430px;
+  min-width: 200px; /* Ensures the book has a minimum width */
+  background-color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  color: var(--clr-gray);
+  margin-top: 7px;
+  margin-bottom: 7px;
+  position: relative; /* For button positioning */
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.bookall:hover {
+  border: 2px solid var(--clr-bg);
+}
+
+.book-imgall {
+  width: 200px;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-imgall img {
+  height: 290px;
+  width: 260px;
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.book-titleall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: -10px;
+}
+
+.book-titleall h2 {
+  font-size: large;
+}
+
+.book-titleall h3 {
+  font-size: medium;
+}
+
+.bookall p {
+  font-size: medium;
+  font-weight: 600;
+}
+
+.btnall {
+  position: absolute;
+  bottom: 10px;
+  background-color: var(--clr-bg);
+  color: var(--clr-gray);
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 600;
+}
+
+.view-detailsall {
+  left: 10px;
+}
+
+.add-to-cartall {
+  right: 10px;
+}
+
+.bookall:hover .btnall {
+  display: block;
+}
+
+.btnall:hover {
+  transform: translateY(1px);
+}
+
+.bookall:hover .book-titleall,
+.bookall:hover p,
+.bookall:hover .book-imgall img {
+  opacity: 0.4;
+}
+
+.booklineall {
+  width: 97%;
+  height: 2px;
+  background-color: var(--clr-white);
+  margin-bottom: 5px;
+}

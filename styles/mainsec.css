@@ -1,0 +1,46 @@
+.mainsec {
+  /* margin-top: -795px; */
+  /* border: 2px solid black; */
+  /* z-index: 20; */
+  /* min-height: 100vh; */
+}
+
+.ulheader {
+  display: flex;
+  overflow-y: hidden;
+  /* align-items: first baseline; */
+  padding: 0;
+  margin: 0;
+  /* z-index: 200000; */
+}
+
+.header-img {
+  max-width: 100%;
+}
+
+.controller {
+  position: absolute;
+  top: 35%;
+  padding: 5vh 1vw;
+  /* background: #ffffff4f; */
+  background: transparent;
+  color: var(--clr-gray);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.control_prev {
+  left: 0;
+}
+
+.control_next {
+  right: 0;
+}
+.control_prev :hover {
+  transform: translateY(2px);
+}
+
+.control_next :hover {
+  transform: translateY(2px);
+}

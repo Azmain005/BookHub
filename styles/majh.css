@@ -1,0 +1,350 @@
+.majher {
+  margin-top: 5px;
+  display: flex;
+}
+.products {
+  height: auto;
+  width: 80%;
+  /* border: 2px solid black; */
+}
+/* sorting part   */
+.filnsearch {
+  height: auto;
+  width: 20%;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sort {
+  display: flex;
+  border: 1px solid black;
+  width: 95%;
+  margin-top: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  height: 350px;
+  background-color: var(--clr-gray);
+  color: var(--clr-white);
+}
+
+.sorthead {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px 15px;
+  /* border: 2px solid blue; */
+  align-items: center;
+}
+
+.sline {
+  width: 95%;
+  height: 1px;
+  background: var(--clr-white);
+}
+
+.radiobuttons {
+  display: flex;
+  align-items: start;
+  /* border: 2px solid black; */
+  margin-right: 80px;
+  height: 280px;
+}
+
+.buttform {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  font-size: medium;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  gap: -3px;
+}
+
+.buttform label,
+input {
+  cursor: pointer;
+}
+
+label {
+  /* border: 2px solid black; */
+  padding: -5px;
+}
+
+/* filter part  */
+.filter {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: var(--clr-gray);
+  color: var(--clr-white);
+}
+
+.bar {
+  /* border: 2px solid red; */
+  width: 290px;
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+}
+.barc {
+  outline: none;
+  border: 1px solid black;
+  width: 100%;
+  border-right: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-right: 10px;
+}
+
+.sd {
+  background: white;
+  border: 1px solid black;
+  border-left: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 22.39px;
+  color: black;
+  width: 35px;
+  font-size: 15px;
+}
+
+.category {
+  /* border: 2px solid white; */
+  margin-top: 10px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 15px;
+  max-height: 350px;
+  min-height: auto;
+  background-color: var(--clr-gray);
+  color: var(--clr-white);
+  margin-bottom: 10px;
+}
+
+.check-box {
+  /* border: 2px solid black; */
+  margin-top: 8px;
+  height: 270px;
+  overflow-y: auto;
+  scrollbar-width: 5%;
+  padding: 8px 7px;
+  font-size: medium;
+}
+
+.check-box input,
+label {
+  cursor: pointer;
+}
+
+.check-box::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.check-box::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track background */
+}
+
+.check-box::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.check-box::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Scrollbar color on hover */
+}
+
+/* Book part */
+.bookcategory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 520px;
+  width: 98%;
+  background: var(--clr-gray);
+  color: var(--clr-white);
+  margin: 10px 15px;
+  border-radius: 20px;
+  position: relative; /* Added for positioning the arrows */
+}
+
+.catname {
+  display: flex;
+  width: 97%;
+  justify-content: space-between;
+  padding: 15px 15px;
+  height: 60px;
+  align-items: center;
+}
+
+.catname h2 {
+  font-size: 30px;
+}
+
+.bookbtn {
+  width: 100px;
+  height: 40px;
+}
+
+.book-shelf {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: var(--clr-gray);
+  height: 450px;
+  width: 97%;
+  padding: 0 5px;
+  overflow-x: hidden; /* Hide overflow initially */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  position: relative; /* Added for positioning */
+}
+
+.book {
+  height: 430px;
+  min-width: 270px;
+  background-color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  color: var(--clr-gray);
+  margin-right: 20px;
+  margin-top: 7px;
+  position: relative; /* Added for button positioning */
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.book:hover {
+  border: 2px solid var(--clr-bg);
+}
+
+.book-img {
+  /* margin-top: 10px; */
+  width: 200px;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-img img {
+  height: 290px;
+  width: 260px;
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+/* .book-img img:hover {
+  border: 1px solid black;
+  opacity: 1;
+} */
+
+.book-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: -10px;
+}
+
+.book-title,
+.book p {
+  transition: opacity 0.3s ease;
+}
+
+.book-title h2 {
+  font-size: large;
+}
+
+.book-title h3 {
+  font-size: medium;
+}
+
+.book p {
+  font-size: medium;
+  font-weight: 600;
+}
+
+.btn {
+  position: absolute;
+  bottom: 10px;
+  background-color: var(--clr-bg);
+  color: var(--clr-gray);
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 600;
+}
+
+.view-details {
+  left: 10px;
+}
+
+.add-to-cart {
+  right: 10px;
+}
+
+.book:hover .btn {
+  display: block;
+}
+
+.btn:hover {
+  transform: translateY(1px);
+}
+
+.book:hover .book-title,
+.book:hover p,
+.book:hover .book-img img {
+  opacity: 0.4;
+}
+
+.bookline {
+  width: 97%;
+  height: 2px;
+  background-color: var(--clr-white);
+  margin-bottom: 5px;
+}
+
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.scroll-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
