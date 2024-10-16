@@ -1,8 +1,10 @@
+![1](https://github.com/user-attachments/assets/6ef925f0-e62a-497d-a4b5-f0dc64194245)
 # BookHub
 Excited to share my latest project, BookHub, a dynamic web application designed for a bookshop! Built using HTML, CSS, JavaScript, PHP, and MySQL, the website allows users to browse books by category, manage personal profiles, add/remove items to their cart and wishlist, and track their orders. Key features like profile management, order tracking, and wishlist functions are secured and accessible only to logged-in users, ensuring a seamless and protected experience. Currently working on optimizing the search functionality and sorting options to improve the user experience. This project has been a great opportunity to develop my full-stack development skills!
 <br>
 Given below is the MYSQL commands:
 To create a user: 
+
 CREATE TABLE user (	
     name VARCHAR(100),
     date_of_birth DATE,
